@@ -1,0 +1,59 @@
+site_name: Yuan-Chat Docs
+
+theme:
+  name: material
+  font: false
+  language: zh
+
+plugins:
+  - mike:
+      alias_type: symlink
+      redirect_template: null
+      deploy_prefix: ''
+      canonical_version: null
+      version_selector: true
+      css_dir: css
+      javascript_dir: js
+
+  - i18n: # 多语言插件
+      docs_structure: folder 
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: zh
+          default: true # 默认语言
+          name: 中文（简体）
+          build: true # 是否构建
+        - locale: en
+          name: English
+          build: true # 是否构建
+          nav_translations:
+            首页: HOME
+            产品手册: PRODUCT
+            用户手册: MANUAL
+            接口文档: INTERFACE
+            用户接口: USER
+            模型接口: MODEL
+            插件接口: PLUGIN
+            知识库接口: KNOWLEDGE
+            聊天接口: CHAT
+            开发规范: DEVELOPER
+            GitLab开发规范: GITLAB
+
+extra:
+  version:
+    provider: mike
+
+nav:
+  - 首页: index.md
+  - 产品手册:
+    - 用户手册: product/introduction.md
+  - 接口文档:
+    - 用户接口: interface/user.md
+    - 模型接口: interface/model.md
+    - 插件接口: interface/plugin.md
+    - 知识库接口: interface/knowledge.md
+    - 聊天接口: interface/chat.md
+  - 开发规范:
+    - GitLab开发规范: developer/gitlab操作.md
