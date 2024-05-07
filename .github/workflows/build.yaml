@@ -43,4 +43,3 @@ jobs:
         run: |
           mike set-default --push main
           mike deploy --push --update-aliases $(cat version.txt) latest
-           mike deploy --push 
