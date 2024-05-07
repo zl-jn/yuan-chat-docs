@@ -4,6 +4,8 @@ theme:
   name: material
   font: false
   language: zh
+  features:
+    - navigation.tabs #导航栏上方标签页
 
 plugins:
   - mike:
