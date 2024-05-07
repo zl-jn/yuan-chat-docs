@@ -10,6 +10,7 @@ theme:
     - navigation.tabs #导航栏上方标签页
 
 plugins:
+  - search
   - mike:
       alias_type: symlink
       redirect_template: null
