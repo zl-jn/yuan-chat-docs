@@ -42,4 +42,5 @@ jobs:
       - name: Deploy with mike
         run: |
           mike set-default --push main
-          mike deploy --push $(cat version.txt) --allow-empty
+          mike deploy --push --update-aliases $(cat version.txt) latest
+           mike deploy --push 
