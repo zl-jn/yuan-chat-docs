@@ -1,4 +1,6 @@
 site_name: Yuan-Chat Docs
+site_url: https://zl-jn.github.io/yuan-chat-docs/
+site_description: Yuan-Chat Docs
 
 theme:
   name: material
@@ -29,6 +31,7 @@ plugins:
           build: true
         - locale: en
           name: English
+          link: https://zl-jn.github.io/yuan-chat-docs/main/en/
           build: true
           nav_translations:
             首页: Home

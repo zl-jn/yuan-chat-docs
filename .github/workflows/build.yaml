@@ -2,7 +2,7 @@ name: Mike deploy
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, v0.00.test ]
 
 jobs:
   build_docs:
@@ -41,4 +41,5 @@ jobs:
         
       - name: Deploy with mike
         run: |
+          mike set-default --push main
           mike deploy --push $(cat version.txt)
