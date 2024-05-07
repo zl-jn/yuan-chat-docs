@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://zl-jn.github.io/yuan-chat-docs/v0.00.test/</loc>
+        <lastmod>2024-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.test/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.testen/"/>
+    </url>
+    <url>
+        <loc>https://zl-jn.github.io/yuan-chat-docs/v0.00.test/APlReference/APlReference/</loc>
+        <lastmod>2024-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.test/APlReference/APlReference/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.testen/APlReference/APlReference/"/>
+    </url>
+    <url>
+        <loc>https://zl-jn.github.io/yuan-chat-docs/v0.00.test/AdministrationGuide/AdministrationGuide/</loc>
+        <lastmod>2024-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.test/AdministrationGuide/AdministrationGuide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.testen/AdministrationGuide/AdministrationGuide/"/>
+    </url>
+    <url>
+        <loc>https://zl-jn.github.io/yuan-chat-docs/v0.00.test/DeveloperGuide/DeveloperGuide/</loc>
+        <lastmod>2024-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.test/DeveloperGuide/DeveloperGuide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.testen/DeveloperGuide/DeveloperGuide/"/>
+    </url>
+    <url>
+        <loc>https://zl-jn.github.io/yuan-chat-docs/v0.00.test/GettingStarted/GettingStarted/</loc>
+        <lastmod>2024-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.test/GettingStarted/GettingStarted/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.testen/GettingStarted/GettingStarted/"/>
+    </url>
+    <url>
+        <loc>https://zl-jn.github.io/yuan-chat-docs/v0.00.test/UserGuide/UserGuide/</loc>
+        <lastmod>2024-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.test/UserGuide/UserGuide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.testen/UserGuide/UserGuide/"/>
+    </url>
+    <url>
+        <loc>https://zl-jn.github.io/yuan-chat-docs/v0.00.test/en/</loc>
+        <lastmod>2024-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.test/en/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.test"/>
+    </url>
+    <url>
+        <loc>https://zl-jn.github.io/yuan-chat-docs/v0.00.test/en/APlReference/APlReference/</loc>
+        <lastmod>2024-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.test/en/APlReference/APlReference/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.testAPlReference/APlReference/"/>
+    </url>
+    <url>
+        <loc>https://zl-jn.github.io/yuan-chat-docs/v0.00.test/en/AdministrationGuide/AdministrationGuide/</loc>
+        <lastmod>2024-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.test/en/AdministrationGuide/AdministrationGuide/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.testAdministrationGuide/AdministrationGuide/"/>
+    </url>
+    <url>
+        <loc>https://zl-jn.github.io/yuan-chat-docs/v0.00.test/en/DeveloperGuide/DeveloperGuide/</loc>
+        <lastmod>2024-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.test/en/DeveloperGuide/DeveloperGuide/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.testDeveloperGuide/DeveloperGuide/"/>
+    </url>
+    <url>
+        <loc>https://zl-jn.github.io/yuan-chat-docs/v0.00.test/en/GettingStarted/GettingStarted/</loc>
+        <lastmod>2024-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.test/en/GettingStarted/GettingStarted/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.testGettingStarted/GettingStarted/"/>
+    </url>
+    <url>
+        <loc>https://zl-jn.github.io/yuan-chat-docs/v0.00.test/en/UserGuide/UserGuide/</loc>
+        <lastmod>2024-05-07</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.test/en/UserGuide/UserGuide/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://zl-jn.github.io/yuan-chat-docs/v0.00.testUserGuide/UserGuide/"/>
+    </url>
+</urlset>
