@@ -37,7 +37,7 @@ plugins:
           build: true
           nav_translations:
             首页: Home
-            基本说明: Getting Started
+            快速入门: Getting Started
             管理员手册: Administration Guide
             用户手册: User Guide
             API文档: APl Reference
@@ -49,7 +49,7 @@ extra:
 
 nav:
   - 首页: index.md
-  - 基本说明: GettingStarted/GettingStarted.md
+  - 快速入门: GettingStarted/GettingStarted.md
   - 管理员手册: AdministrationGuide/AdministrationGuide.md
   - 用户手册: UserGuide/UserGuide.md
   - API文档: APlReference/APlReference.md
