@@ -31,7 +31,7 @@ plugins:
           build: true
         - locale: en
           name: English
-          link: https://zl-jn.github.io/yuan-chat-docs/main/en/
+          link: /en/
           build: true
           nav_translations:
             首页: Home
