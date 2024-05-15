@@ -5,10 +5,32 @@ repo_url: https://github.com/zl-jn/yuan-chat-docs
 
 theme:
   name: material
+  custom_dir: docs/overrides
+  #nav: false
   font: false
   language: zh
   features:
     - navigation.tabs #导航栏上方标签页
+
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
 
 plugins:
   - search
@@ -46,6 +68,9 @@ plugins:
 extra:
   version:
     provider: mike
+  
+extra_css:
+  - custom.css
 
 nav:
   - 首页: index.md
