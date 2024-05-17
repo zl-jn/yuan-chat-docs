@@ -9,7 +9,33 @@ theme:
   font: false
   language: zh
   features:
-    - navigation.tabs #导航栏上方标签页
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.tabs.sticky
+    - navigation.top
+    #- search.highlight
+    #- search.share
+    #- search.suggest
+    #- announce.dismiss
+    #- content.code.annotate
+    #- content.code.copy
+    ## - content.code.select
+    ## - content.footnote.tooltips
+    ## - content.tabs.link
+    #- content.tooltips
+    ## - header.autohide
+    ## - navigation.expand
+    #- navigation.footer
+    #- navigation.indexes
+    ## - navigation.instant
+    ## - navigation.instant.prefetch
+    ## - navigation.instant.progress
+    ## - navigation.prune
+    #- navigation.sections
+    #- navigation.tabs
+    #- navigation.top
+    #- navigation.tracking
+    #- toc.follow
 
   palette:
     - media: "(prefers-color-scheme)"

@@ -2,7 +2,5 @@
 hide:
   - navigation
 ---
-
 ---
-# index
-![Local Image](../pic/home.png)
+![Local Image](../overrides/pic/home.png)
