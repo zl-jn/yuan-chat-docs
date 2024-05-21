@@ -89,6 +89,7 @@ plugins:
             用户手册: User Guide
             API文档: APl Reference
             开发手册: Developer Guide
+            帮助: Help
 
 extra:
   version:
@@ -104,4 +105,5 @@ nav:
   - 用户手册: UserGuide/UserGuide.md
   - API文档: APlReference/APlReference.md
   - 开发手册: DeveloperGuide/DeveloperGuide.md
+  - 帮助: Help/Help.md
 
