@@ -176,7 +176,7 @@ markdown的[链接](https://markdown.com.cn/)<br>
 
 示例:
 
-```markdown<>
+```markdown
 参考文档[Alarm.md](./Alarm.md)
 ```
 
