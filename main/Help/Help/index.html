@@ -671,15 +671,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#11" class="md-nav__link">
-    <span class="md-ellipsis">
-      11.图片
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#12" class="md-nav__link">
     <span class="md-ellipsis">
       12.有序列表
@@ -859,15 +850,6 @@
   <a href="#10" class="md-nav__link">
     <span class="md-ellipsis">
       10.相对链接
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#11" class="md-nav__link">
-    <span class="md-ellipsis">
-      11.图片
     </span>
   </a>
   
@@ -1146,15 +1128,22 @@ print ("Hello, World")</code></p>
 <h3 id="10">10.相对链接</h3>
 <p>使用[链接文本](相对路径)创建文件相对链接</p>
 <p>示例:</p>
-<pre><code class="language-markdown">参考文档[Alarm.md](./Alarm.md)
-</code></pre>
-<p>效果:</p>
-<p>参考文档<a href="../Alarm/">Alarm.md</a></p>
-<hr />
-<h3 id="11">11.图片</h3>
-<p>使用![替代文字](图片URL)的语法来插入图片</p>
-<p>示例:</p>
-<pre><code class="language-markdown">本地图片![本地图片](./hero.png)
+<p>```markdown&lt;&gt;
+参考文档<a href="../Alarm/">Alarm.md</a></p>
+<pre><code>
+效果:
+
+参考文档[Alarm.md](./Alarm.md)
+
+---
+### 11.图片
+
+使用\![替代文字]\(图片URL)的语法来插入图片
+
+示例:
+
+```markdown
+本地图片![本地图片](./hero.png)
 
 网络图片![网络图片](https://markdown.com.cn/hero.png)
 </code></pre>
