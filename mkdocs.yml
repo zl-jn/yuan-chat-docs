@@ -88,7 +88,7 @@ plugins:
             管理员手册: Administration Guide
             用户手册: User Guide
             API文档: APl Reference
-            开发手册: Developer Guide
+            开发手册: Developer Guidew
             帮助: Help
 
 extra:
@@ -97,6 +97,34 @@ extra:
   
 #extra_css:
 #  - custom.css
+
+markdown_extensions:
+  - markdown_include.include:
+      base_path: docs
+  # - mdx_include:
+  #     base_path: docs
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - attr_list
+  - meta
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.snippets:
+      base_path: docs/snippets
+  - pymdownx.keys
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.escapeall
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - toc:
+      permalink: true
+  - def_list
 
 nav:
   - 首页: index.md
