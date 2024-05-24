@@ -1,3 +1,73 @@
+## 更新方法
+
+### 1. 工程地址
+工程地址: https://github.com/zl-jn/yuan-chat-docs.git
+访问地址: https://zl-jn.github.io/yuan-chat-docs/
+
+### 2. 工程结构
+```markdown
+|-- .github/workflows
+    |--  build.yaml                 <!--构建文件-->
+|-- docs                            <!--文档目录-->
+    |-- en
+        |-- index.md
+        |-- AdministrationGuide
+        |-- APlReference
+        |-- DeveloperGuide
+        |-- GettingStarted
+        |-- UserGuide
+    |-- override                    <!--覆盖目录, 首页html资源目录-->
+    |-- pic                         <!--图片目录-->
+    |-- zh
+        |-- index.md
+        |-- GettingStarted
+        |-- AdministrationGuide
+        |-- UserGuide
+        |-- APlReference
+        |-- DeveloperGuide
+|-- mkdocs.yml                      <!--配置文件-->
+|-- requirements.txt                <!--依赖文件-->
+|-- version.txt                     <!--版本文件-->
+```
+
+### 2. 更新步骤
+
+
+- 拉取代码
+  ```shell
+  git clone https://github.com/zl-jn/yuan-chat-docs.git
+  ```
+- 切换分支
+  ```shell
+  git checkout dev
+  ```
+- 修改 `docs` 目录下的文档
+- 本地预览
+  ```shell
+  mike deploy dev
+  mike serve
+  ```
+- 提交到对应分支
+  ```shell
+  git add . 
+  git commit -m 'update docs' 
+  git push dev
+  ```
+- 等待 `github` 构建完成
+- 访问 `https://zl-jn.github.io/yuan-chat-docs/` 查看更新后的文档
+
+### 3. 推荐工具
+
+typora 下载地址：<https://www.typora.io/>
+VS code 插件markdown all in one 、 Markdown Preview Enhanced、Markdown Preview Github Styling
+
+### 4. 参考
+<https://docs.github.com/zh/get-started>
+<https://markdown.com.cn/basic-syntax/headings.html>
+
+
+# 格式说明
+
 ### 1.标题
 要创建标题，请在标题文本前添加一至六个 # 符号。 你使用的 # 数量将决定层次结构级别和标题的大小。
 
@@ -144,14 +214,14 @@
 示例:
 
 ```markdown
-markdown的[链接](https://markdown.com.cn/)<br>
+markdown的[链接](https://markdown.com.cn/)
 <https://markdown.com.cn/>
 ```
 
 
 效果:
 
-markdown的[链接](https://markdown.com.cn/)<br>
+markdown的[链接](https://markdown.com.cn/)
 <https://markdown.com.cn/>
 
 ---
