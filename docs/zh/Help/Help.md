@@ -63,8 +63,10 @@ typora 下载地址：<https://www.typora.io/>
 VS code 插件markdown all in one 、 Markdown Preview Enhanced、Markdown Preview Github Styling
 
 ### 4. 参考
-<https://docs.github.com/zh/get-started>
+<https://docs.github.com/zh/get-started/writing-on-github>
+
 <https://markdown.com.cn/basic-syntax/headings.html>
+
 <https://squidfunk.github.io/mkdocs-material/reference/>
 
 
@@ -268,14 +270,14 @@ markdown的[链接](https://markdown.com.cn/)
 示例:
 
 ```markdown
-本地图片![本地图片](./hero.png)
+本地图片![本地图片](./OIP.jpg)
 
-网络图片![网络图片](https://markdown.com.cn/hero.png)
+网络图片![网络图片](https://markdown.com.cn/hero.png){ align=left }
 ```
 
 效果:
 
-本地图片![本地图片](./hero.png)
+本地图片![本地图片](./OIP.jpg)
 
 网络图片![网络图片](https://markdown.com.cn/hero.png)
 
@@ -391,11 +393,18 @@ A footnote can also have multiple lines[^2].
 [^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.  This is a second ine.
 ```
 
+Here is a simple footnote[^1].
+A footnote can also have multiple lines[^2].
+
+[^1]: My reference.
+[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.  This is a second ine.
+
 效果:
 
 ![](./footnote.png)
 
 ### 19. 警告
+一个块以开头，后跟一个用作类型限定符的关键字。块的内容紧随其后，缩进四个空格：!!!
 示例
 ```markdown
 ??? info
@@ -406,7 +415,7 @@ A footnote can also have multiple lines[^2].
     这是一个info
 
 其他效果
-??? note "note title"
+??? note "这里写标题"
     这是一个note
 
 ??? abstract
@@ -563,6 +572,7 @@ int main(){
     ```
 
 ### 24. 网格
+列表语法本质上是卡片网格的快捷方式，由一个无序（或有序）列表组成，该列表由 a 和 类包装：divgridcards
 
 ```markdown
 <div class="grid cards" markdown>
@@ -586,7 +596,7 @@ int main(){
 </div>
 
 ### 25. 表情/图标
-
+表情符号可以通过将表情符号的简码放在两个冒号之间来集成到 Markdown 中。
 ```markdown
 :smile:
 :+1:
@@ -612,4 +622,76 @@ int main(){
 :simple-simpleicons: – [Simple Icons](https://simpleicons.org/)
 
 :grinning: – [Emojis](https://emojipedia.org/)
+
+### 26. 数学公式
+数学公式内联块必须包含$...$中
+数学公式块必须包含在单独的行中或单独的行中：$$...$$
+
+
+```markdown
+当我们探索自然界的奥秘时，数学成为了一种无可替代的语言。从简单的
+
+$$
+1 + 1 = 2
+$$
+
+到复杂的 $e^{i\pi} + 1 = 0$，数学在解释和预测现象方面发挥着重要作用。
+让我们思考一个简单的几何问题，如直角三角形。在一个直角三角形中，勾股定理 
+
+$$
+a^2 + b^2 = c^2
+$$
+
+ 揭示了直角边与斜边之间的关系。这个简单的公式贯穿了几何学和代数学，成为诸多数学分支的基石。
+在微积分领域，牛顿-莱布尼茨公式 
+
+$$
+\int_a^b f(x) \,dx = F(b) - F(a)
+$$
+
+展示了积分与导数的关系。这个公式揭示了函数与其累积变化之间的联系，对于计算面积、体积以及许多实际问题的建模都具有重要意义。
+数学与自然界的联系不仅仅体现在公式中，还可以在自然界的模式中找到。例如，旋涡状的海贝壳外形类似于斐波那契数列，其每个数字是前两个数字之和： 
+
+$$
+1, 1, 2, 3, 5, 8, 13, \dots
+$$
+
+这种数学模式在数学、生物学和艺术中都有出现，展示了数学的美妙多样性。
+
+$$
+\lim_{n \to \infty} \frac{1}{n(n+1)} \quad and \quad \lim_{x\leftarrow{示例}} \frac{1}{n(n+1)}
+$$
+```
+当我们探索自然界的奥秘时，数学成为了一种无可替代的语言。从简单的
+
+$$
+1 + 1 = 2
+$$
+
+到复杂的 $e^{i\pi} + 1 = 0$，数学在解释和预测现象方面发挥着重要作用。
+让我们思考一个简单的几何问题，如直角三角形。在一个直角三角形中，勾股定理 
+
+$$
+a^2 + b^2 = c^2
+$$
+
+ 揭示了直角边与斜边之间的关系。这个简单的公式贯穿了几何学和代数学，成为诸多数学分支的基石。
+在微积分领域，牛顿-莱布尼茨公式 
+
+$$
+\int_a^b f(x) \,dx = F(b) - F(a)
+$$
+
+展示了积分与导数的关系。这个公式揭示了函数与其累积变化之间的联系，对于计算面积、体积以及许多实际问题的建模都具有重要意义。
+数学与自然界的联系不仅仅体现在公式中，还可以在自然界的模式中找到。例如，旋涡状的海贝壳外形类似于斐波那契数列，其每个数字是前两个数字之和： 
+
+$$
+1, 1, 2, 3, 5, 8, 13, \dots
+$$
+
+这种数学模式在数学、生物学和艺术中都有出现，展示了数学的美妙多样性。
+
+$$
+\lim_{n \to \infty} \frac{1}{n(n+1)} \quad and \quad \lim_{x\leftarrow{示例}} \frac{1}{n(n+1)}
+$$
 
