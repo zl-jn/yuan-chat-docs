@@ -89,6 +89,8 @@
       
     
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -946,6 +948,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    <span class="md-ellipsis">
+      26. 数学公式
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1302,6 +1313,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#26" class="md-nav__link">
+    <span class="md-ellipsis">
+      26. 数学公式
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1378,9 +1398,9 @@
 <p>typora 下载地址：<a href="https://www.typora.io/">https://www.typora.io/</a></p>
 <p>VS code 插件markdown all in one 、 Markdown Preview Enhanced、Markdown Preview Github Styling</p>
 <h3 id="4">4. 参考<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
-<p><a href="https://docs.github.com/zh/get-started">https://docs.github.com/zh/get-started</a>
-<a href="https://markdown.com.cn/basic-syntax/headings.html">https://markdown.com.cn/basic-syntax/headings.html</a>
-<a href="https://squidfunk.github.io/mkdocs-material/reference/">https://squidfunk.github.io/mkdocs-material/reference/</a></p>
+<p><a href="https://docs.github.com/zh/get-started/writing-on-github">https://docs.github.com/zh/get-started/writing-on-github</a></p>
+<p><a href="https://markdown.com.cn/basic-syntax/headings.html">https://markdown.com.cn/basic-syntax/headings.html</a></p>
+<p><a href="https://squidfunk.github.io/mkdocs-material/reference/">https://squidfunk.github.io/mkdocs-material/reference/</a></p>
 <h1 id="_2">格式说明<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
 <h3 id="1_1">1.标题<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
 <p>要创建标题，请在标题文本前添加一至六个 # 符号。 你使用的 # 数量将决定层次结构级别和标题的大小。</p>
@@ -1598,12 +1618,12 @@ print ("Hello, World")<br />
 <h3 id="11">11.图片<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
 <p>使用![替代文字](图片URL)的语法来插入图片</p>
 <p>示例:</p>
-<div class="language-markdown highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>本地图片![本地图片](./hero.png)
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>本地图片![本地图片](./OIP.jpg)
 </span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>网络图片![网络图片](https://markdown.com.cn/hero.png)
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>网络图片![网络图片](https://markdown.com.cn/hero.png){ align=left }
 </span></code></pre></div>
 <p>效果:</p>
-<p>本地图片<img alt="本地图片" src="../../../Help/hero.png" /></p>
+<p>本地图片<img alt="本地图片" src="./OIP.jpg" /></p>
 <p>网络图片<img alt="网络图片" src="https://markdown.com.cn/hero.png" /></p>
 <hr />
 <h3 id="12">12.有序列表<a class="headerlink" href="#12" title="Permanent link">&para;</a></h3>
@@ -1689,10 +1709,15 @@ print ("Hello, World")<br />
 </span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>[<span class="nl">^1</span>]: <span class="na">My reference.</span>
 </span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>[<span class="nl">^2</span>]: <span class="na">To add line breaks within a footnote, prefix new lines with 2 spaces.  This is a second ine.</span>
 </span></code></pre></div>
+<p>Here is a simple footnote[^1].
+A footnote can also have multiple lines[^2].</p>
+<p>[^1]: My reference.
+[^2]: To add line breaks within a footnote, prefix new lines with 2 spaces.  This is a second ine.</p>
 <p>效果:</p>
 <p><img alt="" src="../../../Help/footnote.png" /></p>
 <h3 id="19">19. 警告<a class="headerlink" href="#19" title="Permanent link">&para;</a></h3>
-<p>示例
+<p>一个块以开头，后跟一个用作类型限定符的关键字。块的内容紧随其后，缩进四个空格：!!!
+示例
 <div class="language-markdown highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>??? info
 </span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>    这是一个info
 </span></code></pre></div>
@@ -1703,7 +1728,7 @@ print ("Hello, World")<br />
 </details>
 <p>其他效果</p>
 <details class="note">
-<summary>note title</summary>
+<summary>这里写标题</summary>
 <p>这是一个note</p>
 </details>
 <details class="abstract">
@@ -1848,6 +1873,7 @@ print ("Hello, World")<br />
 </div>
 </div>
 <h3 id="24">24. 网格<a class="headerlink" href="#24" title="Permanent link">&para;</a></h3>
+<p>列表语法本质上是卡片网格的快捷方式，由一个无序（或有序）列表组成，该列表由 a 和 类包装：divgridcards</p>
 <div class="language-markdown highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>&lt;div class=&quot;grid cards&quot; markdown&gt;
 </span><span id="__span-32-2"><a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>
 </span><span id="__span-32-3"><a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="k">-</span><span class="w"> </span>1 第一章
@@ -1867,11 +1893,12 @@ print ("Hello, World")<br />
 </ul>
 </div>
 <h3 id="25">25. 表情/图标<a class="headerlink" href="#25" title="Permanent link">&para;</a></h3>
+<p>表情符号可以通过将表情符号的简码放在两个冒号之间来集成到 Markdown 中。
 <div class="language-markdown highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>:smile:
 </span><span id="__span-33-2"><a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>:+1:
 </span><span id="__span-33-3"><a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>:tada:
 </span><span id="__span-33-4"><a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>:100:
-</span></code></pre></div>
+</span></code></pre></div></p>
 <p><img alt="😄" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f604.svg" title=":smile:" />
 <img alt="👍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f44d.svg" title=":+1:" />
 <img alt="🎉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f389.svg" title=":tada:" />
@@ -1884,6 +1911,65 @@ print ("Hello, World")<br />
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg></span> – <a href="https://primer.style/foundations/icons">Octicons</a></p>
 <p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C8.688 0 6 2.688 6 6s2.688 6 6 6c4.64-.001 7.526 5.039 5.176 9.04h1.68A7.507 7.507 0 0 0 12 10.5 4.502 4.502 0 0 1 7.5 6c0-2.484 2.016-4.5 4.5-4.5s4.5 2.016 4.5 4.5H18c0-3.312-2.688-6-6-6Zm0 3a3 3 0 0 0 0 6c4 0 4-6 0-6Zm0 1.5A1.5 1.5 0 0 1 13.5 6v.002c-.002 1.336-1.617 2.003-2.561 1.058C9.995 6.115 10.664 4.5 12 4.5ZM7.5 15v1.5H9v6H4.5V24h15v-1.5H15v-6h1.5V15Zm3 1.5h3v6h-3zm-6 1.47c0 1.09.216 2.109.644 3.069h1.684A5.957 5.957 0 0 1 6 17.97Z"/></svg></span> – <a href="https://simpleicons.org/">Simple Icons</a></p>
 <p><img alt="😀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f600.svg" title=":grinning:" /> – <a href="https://emojipedia.org/">Emojis</a></p>
+<h3 id="26">26. 数学公式<a class="headerlink" href="#26" title="Permanent link">&para;</a></h3>
+<p>数学公式内联块必须包含<span class="arithmatex">\(...\)</span>中
+数学公式块必须包含在单独的行中或单独的行中：<span class="arithmatex">\(<span class="arithmatex">\(...\)</span>\)</span></p>
+<p><div class="language-markdown highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>当我们探索自然界的奥秘时，数学成为了一种无可替代的语言。从简单的
+</span><span id="__span-34-2"><a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>
+</span><span id="__span-34-3"><a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>$$
+</span><span id="__span-34-4"><a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a>1 + 1 = 2
+</span><span id="__span-34-5"><a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>$$
+</span><span id="__span-34-6"><a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a>
+</span><span id="__span-34-7"><a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a>到复杂的 $e^{i\pi} + 1 = 0$，数学在解释和预测现象方面发挥着重要作用。
+</span><span id="__span-34-8"><a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a>让我们思考一个简单的几何问题，如直角三角形。在一个直角三角形中，勾股定理 
+</span><span id="__span-34-9"><a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a>
+</span><span id="__span-34-10"><a id="__codelineno-34-10" name="__codelineno-34-10" href="#__codelineno-34-10"></a>$$
+</span><span id="__span-34-11"><a id="__codelineno-34-11" name="__codelineno-34-11" href="#__codelineno-34-11"></a>a^2 + b^2 = c^2
+</span><span id="__span-34-12"><a id="__codelineno-34-12" name="__codelineno-34-12" href="#__codelineno-34-12"></a>$$
+</span><span id="__span-34-13"><a id="__codelineno-34-13" name="__codelineno-34-13" href="#__codelineno-34-13"></a>
+</span><span id="__span-34-14"><a id="__codelineno-34-14" name="__codelineno-34-14" href="#__codelineno-34-14"></a> 揭示了直角边与斜边之间的关系。这个简单的公式贯穿了几何学和代数学，成为诸多数学分支的基石。
+</span><span id="__span-34-15"><a id="__codelineno-34-15" name="__codelineno-34-15" href="#__codelineno-34-15"></a>在微积分领域，牛顿-莱布尼茨公式 
+</span><span id="__span-34-16"><a id="__codelineno-34-16" name="__codelineno-34-16" href="#__codelineno-34-16"></a>
+</span><span id="__span-34-17"><a id="__codelineno-34-17" name="__codelineno-34-17" href="#__codelineno-34-17"></a>$$
+</span><span id="__span-34-18"><a id="__codelineno-34-18" name="__codelineno-34-18" href="#__codelineno-34-18"></a>\int_a^b f(x) \,dx = F(b) - F(a)
+</span><span id="__span-34-19"><a id="__codelineno-34-19" name="__codelineno-34-19" href="#__codelineno-34-19"></a>$$
+</span><span id="__span-34-20"><a id="__codelineno-34-20" name="__codelineno-34-20" href="#__codelineno-34-20"></a>
+</span><span id="__span-34-21"><a id="__codelineno-34-21" name="__codelineno-34-21" href="#__codelineno-34-21"></a>展示了积分与导数的关系。这个公式揭示了函数与其累积变化之间的联系，对于计算面积、体积以及许多实际问题的建模都具有重要意义。
+</span><span id="__span-34-22"><a id="__codelineno-34-22" name="__codelineno-34-22" href="#__codelineno-34-22"></a>数学与自然界的联系不仅仅体现在公式中，还可以在自然界的模式中找到。例如，旋涡状的海贝壳外形类似于斐波那契数列，其每个数字是前两个数字之和： 
+</span><span id="__span-34-23"><a id="__codelineno-34-23" name="__codelineno-34-23" href="#__codelineno-34-23"></a>
+</span><span id="__span-34-24"><a id="__codelineno-34-24" name="__codelineno-34-24" href="#__codelineno-34-24"></a>$$
+</span><span id="__span-34-25"><a id="__codelineno-34-25" name="__codelineno-34-25" href="#__codelineno-34-25"></a>1, 1, 2, 3, 5, 8, 13, \dots
+</span><span id="__span-34-26"><a id="__codelineno-34-26" name="__codelineno-34-26" href="#__codelineno-34-26"></a>$$
+</span><span id="__span-34-27"><a id="__codelineno-34-27" name="__codelineno-34-27" href="#__codelineno-34-27"></a>
+</span><span id="__span-34-28"><a id="__codelineno-34-28" name="__codelineno-34-28" href="#__codelineno-34-28"></a>这种数学模式在数学、生物学和艺术中都有出现，展示了数学的美妙多样性。
+</span><span id="__span-34-29"><a id="__codelineno-34-29" name="__codelineno-34-29" href="#__codelineno-34-29"></a>
+</span><span id="__span-34-30"><a id="__codelineno-34-30" name="__codelineno-34-30" href="#__codelineno-34-30"></a>$$
+</span><span id="__span-34-31"><a id="__codelineno-34-31" name="__codelineno-34-31" href="#__codelineno-34-31"></a>\lim_{n \to \infty} \frac{1}{n(n+1)} \quad and \quad \lim_{x\leftarrow{示例}} \frac{1}{n(n+1)}
+</span><span id="__span-34-32"><a id="__codelineno-34-32" name="__codelineno-34-32" href="#__codelineno-34-32"></a>$$
+</span></code></pre></div>
+当我们探索自然界的奥秘时，数学成为了一种无可替代的语言。从简单的</p>
+<div class="arithmatex">\[
+1 + 1 = 2
+\]</div>
+<p>到复杂的 <span class="arithmatex">\(e^{i\pi} + 1 = 0\)</span>，数学在解释和预测现象方面发挥着重要作用。
+让我们思考一个简单的几何问题，如直角三角形。在一个直角三角形中，勾股定理 </p>
+<div class="arithmatex">\[
+a^2 + b^2 = c^2
+\]</div>
+<p>揭示了直角边与斜边之间的关系。这个简单的公式贯穿了几何学和代数学，成为诸多数学分支的基石。
+在微积分领域，牛顿-莱布尼茨公式 </p>
+<div class="arithmatex">\[
+\int_a^b f(x) \,dx = F(b) - F(a)
+\]</div>
+<p>展示了积分与导数的关系。这个公式揭示了函数与其累积变化之间的联系，对于计算面积、体积以及许多实际问题的建模都具有重要意义。
+数学与自然界的联系不仅仅体现在公式中，还可以在自然界的模式中找到。例如，旋涡状的海贝壳外形类似于斐波那契数列，其每个数字是前两个数字之和： </p>
+<div class="arithmatex">\[
+1, 1, 2, 3, 5, 8, 13, \dots
+\]</div>
+<p>这种数学模式在数学、生物学和艺术中都有出现，展示了数学的美妙多样性。</p>
+<div class="arithmatex">\[
+\lim_{n \to \infty} \frac{1}{n(n+1)} \quad and \quad \lim_{x\leftarrow{示例}} \frac{1}{n(n+1)}
+\]</div>
 
 
 
@@ -1942,6 +2028,18 @@ print ("Hello, World")<br />
     
     
       <script src="../../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>
