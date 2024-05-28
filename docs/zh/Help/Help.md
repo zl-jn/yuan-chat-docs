@@ -59,11 +59,13 @@
 ### 3. 推荐工具
 
 typora 下载地址：<https://www.typora.io/>
+
 VS code 插件markdown all in one 、 Markdown Preview Enhanced、Markdown Preview Github Styling
 
 ### 4. 参考
 <https://docs.github.com/zh/get-started>
 <https://markdown.com.cn/basic-syntax/headings.html>
+<https://squidfunk.github.io/mkdocs-material/reference/>
 
 
 # 格式说明
@@ -98,6 +100,10 @@ VS code 插件markdown all in one 、 Markdown Preview Enhanced、Markdown Previ
 |全部加粗和斜体|\*\*\* \*\*\*|\*\*\*全部加粗和斜体***|***全部加粗和斜体***|
 |下标|\<sub> \</sub>|文字\<sub>下标\</sub> |文字<sub>下标</sub>|
 |上标|\<sup> \</sup>|文字\<sup>上标\</sup>|文字<sup>上标</sup>|
+|高亮|== ==|\==高亮==|==高亮==|
+|下划线|^^ ^^|\^\^下划线^^|^^下划线^^|
+|键盘按键|++ ++|\+\+ctrl+alt++|++ctrl+alt++|
+
 
 ---
 ### 3.表格
@@ -388,3 +394,222 @@ A footnote can also have multiple lines[^2].
 效果:
 
 ![](./footnote.png)
+
+### 19. 警告
+示例
+```markdown
+??? info
+    这是一个info
+```
+效果
+??? info
+    这是一个info
+
+其他效果
+??? note "note title"
+    这是一个note
+
+??? abstract
+    这是一个abstract
+
+??? tip
+    这是一个tip
+
+??? success
+    这是一个success
+
+??? question
+    这是一个question
+
+??? warning
+    这是一个warning
+
+??? failure
+    这是一个failure
+
+??? danger
+    这是一个danger
+
+??? bug
+    这是一个bug
+
+??? example
+    这是一个example
+
+??? quote
+    这是一个quote
+
+### 20. 附注
+
+```markdown
+附注的示例(1),图标可以点开查看附注内容。
+{ .annotate }
+
+1. 这是附注的内容
+```
+
+附注的示例(1),图标可以点开查看附注内容。
+{ .annotate }
+
+1. 这是附注的内容
+
+
+### 21. 按钮
+
+示例
+```markdown
+[跳转](#){ .md-button }
+```
+
+效果
+[跳转](#){ .md-button }
+
+
+### 22. 代码块
+#### 代码复制
+复制
+``````markdown
+``` { .yaml .copy }
+# Code 
+```
+``````
+
+禁止复制
+``````markdown
+``` { .yaml .no-copy }
+# Code block content
+```
+``````
+
+复制
+``` { .yaml .copy }
+# Code block content
+```
+
+禁止复制
+``` { .yaml .no-copy }
+# Code block content
+```
+
+#### 代码标题
+
+``````markdown
+```c title="hw.c" linenums="1"  hl_lines="4"
+#include <stdio.h>
+ 
+int main(){
+    printf("Hello, World");
+    return(0);
+}
+```
+``````
+
+```c title="hw.c" linenums="1"  hl_lines="4"
+#include <stdio.h>
+ 
+int main(){
+    printf("Hello, World");
+    return(0);
+}
+```
+
+### 23. 内容选项卡
+
+``````markdown
+=== "c"
+
+    ```c
+    #include <stdio.h>
+
+    int main(){
+        printf("Hello, World");
+        return(0);
+    }
+    ```
+
+=== "C++"
+
+    ```c++
+    #include <iostream>
+
+    int main(void) {
+      std::cout << "Hello world!" << std::endl;
+      return 0;
+    }
+    ```
+
+``````
+
+=== "c"
+
+    ```c
+    #include <stdio.h>
+
+    int main(){
+        printf("Hello, World");
+        return(0);
+    }
+    ```
+
+=== "C++"
+
+    ```c++
+    #include <iostream>
+
+    int main(void) {
+      std::cout << "Hello world!" << std::endl;
+      return 0;
+    }
+    ```
+
+### 24. 网格
+
+```markdown
+<div class="grid cards" markdown>
+
+- 1 第一章
+- 2 第二章
+- 3 第三章
+- 4 第四章
+
+</div>
+```
+
+<div class="grid cards" markdown>
+
+- 1 第一章. abcdefghijklmnopqrstuvwxyx
+- 2 第二章. abcdefghijklmnopqrstuvwxyx
+- 3 第三章. abcdefghijklmnopqrstuvwxyx
+- 4 第四章. abcdefghijklmnopqrstuvwxyx
+- 4 第四章. abcdefghijklmnopqrstuvwxyx
+
+</div>
+
+### 25. 表情/图标
+
+```markdown
+:smile:
+:+1:
+:tada:
+:100:
+```
+
+:smile:
+:+1:
+:tada:
+:100:
+:duck:
+:horse:
+
+支持的表情/图标
+
+:material-material-design: – [Material Design](https://pictogrammers.com/library/mdi/)
+
+:fontawesome-brands-font-awesome: – [FontAwesome](https://fontawesome.com/search?m=free)
+
+:octicons-mark-github-16: – [Octicons](https://primer.style/foundations/icons)
+
+:simple-simpleicons: – [Simple Icons](https://simpleicons.org/)
+
+:grinning: – [Emojis](https://emojipedia.org/)
+
